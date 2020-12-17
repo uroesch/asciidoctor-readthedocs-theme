@@ -68,3 +68,80 @@ table.tableblock.grid-all {
   font-size: 0.8em;
   text-align: center;
 }
+
+
+#toc.toc2 {
+  font-family: $toc-font-family;
+  padding: 0;
+  background: $toc-bg-color;
+
+  #toctitle {
+    padding: 1.6em 1em; 
+    text-align: center;
+    font-family: $toc-title-font-family;
+    color: $toc-title-font-color;
+    background: $toc-title-bg-color;
+    &::before {
+      vertical-align: middle;
+      content: "\f02d";  
+      content: "\f1b2";
+      padding-right: 0.3em;
+      margin-left: -1em;
+      font-family: 'FontAwesome';
+      font-size: 200%;
+    }
+  }
+
+  a { 
+    display: block;
+    color: $toc-menu-font-color;
+    padding: 0.25em 1em;
+  }
+  a:hover, a:focus {
+    background: lighten($toc-bg-color, 20%);
+  }
+  ul {
+    font-family: $toc-font-family;
+    &.sectlevel1 {
+      a {
+        font-weight: bold;
+        color: $toc-section-font-color;
+      } 
+      a:hover, a:focus {
+        color: $toc-menu-font-color;
+      }
+    }
+    &.sectlevel2, &.sectlevel3, &.sectlevel4, &.sectlevel5, &.sectlevel6 {
+      padding: 0;
+      a { 
+        font-weight: normal;
+        color: $toc-menu-font-color;
+      }
+    &.sectlevel2 a {
+      padding-left: 2em;
+    }
+    &.sectlevel3 a {
+      padding-left: 3em;
+    }
+    &.sectlevel4 a { 
+      padding-left: 4em;
+    }
+    &.sectlevel5 a {
+      padding-left: 5em;
+    }
+    &.sectlevel6 a {
+      padding-left: 6em;
+    }
+    }
+  }
+}
+
+@media #{$small} {
+  #toc.toc2 {
+    padding: 0;
+    background: $toc-bg-color;
+    #toctitle::before {
+      margin-left: -0.5em;
+    }
+  }
+}

@@ -15,6 +15,18 @@ $header-font-family: "Roboto Slab", sans-serif;
 $header-top-margin: 1em;
 $subheader-font-color: #6c818f;
 
+// TOC
+
+$toc-font-family: $body-font-family;
+$toc-title-font-family: $header-font-family;
+$toc-title-font-color: #ffffff;
+$toc-title-bg-color: #2980b9;
+$toc-top-margin: 1em;
+$toc-section-font-color: #55a5d9;
+$toc-menu-font-color: #d9d9d9;
+$toc-bg-color: #343131;
+$toc-hover-bg-color: #4e4a4a;
+
 // Paragraphs
 
 $paragraph-line-height: 1.5;

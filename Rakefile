@@ -61,6 +61,14 @@ end
 task :default => 'css:default'
 task :clean => 'css:clean'
 
+task :test do
+  sh %(#{asciidoctor} ) +
+     %(-a stylesdir="#{BASE_DIR}" ) +
+     %(-a stylesheet=readthedocs.css ) +
+     %(-o samples/article.html ) +
+     %(test/article.adoc )
+end
+
 # -----------------------------------------------------------------------------
 # Namespaces
 # -----------------------------------------------------------------------------
@@ -73,6 +81,7 @@ namespace :css do
   task :clean do 
     sh %(git submodule deinit --force #{factory_dir})  
     sh %(git rm -rf #{factory_dir})  
+    sh %(git rm --cached .gitmodules)
   end
 
   task :clone_factory do
