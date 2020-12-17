@@ -9,7 +9,10 @@ This is an early draft trying to bring a more modern look to the readthedocs
 theme included in the asciidoctor gem. 
 
 NOTE: At this point in time the only change compared to distributed version
-      is that the fonts have been adjusted.
+      is that the fonts and the table of contents has been adjusted.
+
+.Screenshot of current version with new table of contents
+image::images/asciidoctor-readthedocs-screenshot.png[]
 
 == How to use
 
@@ -58,4 +61,14 @@ build. And create the `readthedocs.css` file.
 [source,shell]
 ----
 rake
+----
+
+=== Create test document
+
+The `syntax.adoc` from the asciidoctor distribution is included use `rake` 
+to create the html file. This yields the file `samples/article.html`.
+
+[source,shell]
+----
+rake test
 ----
