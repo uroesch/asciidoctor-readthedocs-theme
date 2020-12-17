@@ -1,0 +1,61 @@
+= asciidoctor html readthedocs theme 
+:author: Urs Roesch
+:email: <github@bun.ch>
+:notoc:
+:noheader:
+:nofooter:
+
+This is an early draft trying to bring a more modern look to the readthedocs
+theme included in the asciidoctor gem. 
+
+NOTE: At this point in time the only change compared to distributed version
+      is that the fonts have been adjusted.
+
+== How to use
+
+=== Copy the css file
+Simply copy the `readthedocs.css` file to your projects root folder and run
+`asciidoctor` as follows:
+
+[source,shell]
+----
+asciidoctor -a stylesdir="$(pwd)" -a sytlesheet=readthedocs.css *.adoc
+----
+
+=== As a git submodule 
+
+Add the style as git submodule into your project.
+
+[source,shell]
+----
+git submodule add \
+  https://github.com/uroesch/asciidoctor-readthedocs-theme \
+  readthedocs
+----
+
+The run asciidoctor as shown below.
+
+[source,shell]
+----
+asciidoctor \
+  -a stylesdir="$(pwd)/readthedocs" \
+  -a sytlesheet=readthedocs.css \
+  *.adoc
+----
+
+== Build from scratch
+
+=== Prerequisites
+* ruby
+* rake
+* docker
+
+=== Build
+
+Simply type rake and the command will download a docker container for the
+build. And create the `readthedocs.css` file. 
+
+[source,shell]
+----
+rake
+----
