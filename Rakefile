@@ -98,6 +98,10 @@ namespace :css do
   end
 
   task :default => :copy_scss do
-    sh %(#{compass} compile --css-dir #{STYLES_DIR} -s compressed)
+    # cd into the directory 
+    # when running inside docker
+    cd factory_dir do
+      sh %(#{compass} compile --css-dir #{STYLES_DIR} -s compressed)
+    end
   end
 end
