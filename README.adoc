@@ -9,9 +9,10 @@ This is an early draft trying to bring a more modern look to the readthedocs
 theme included in the asciidoctor gem. 
 
 NOTE: At this point in time the only change compared to distributed version
-      is that the fonts and the table of contents has been adjusted.
+      is that the fonts and the table of contents and admonitions have been 
+      adjusted.
 
-.Screenshot of current version with new table of contents
+.Screenshot of current version with new table of contents and admonitions.
 image::images/asciidoctor-readthedocs-screenshot.png[]
 
 == How to use
