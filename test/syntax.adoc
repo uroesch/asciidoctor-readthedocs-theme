@@ -34,6 +34,12 @@ NOTE: An admonition paragraph, like this note, grabs the reader's attention.
 
 TIP: Convert this document using the `asciidoctor` command to see the output produced from it.
 
+IMPORTANT: This is a important message. Do not disregard!
+
+CAUTION: This is a caution admonition. Be careful!
+
+WARNING: This is a warning. Take it serious!
+
 == Text Formatting
 :hardbreaks:
 
