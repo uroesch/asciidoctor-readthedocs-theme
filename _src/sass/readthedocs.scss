@@ -69,7 +69,6 @@ table.tableblock.grid-all {
   text-align: center;
 }
 
-
 #toc.toc2 {
   font-family: $toc-font-family;
   padding: 0;
@@ -301,4 +300,30 @@ table.tableblock.grid-all {
   }
 }
 
+
+.ulist:not(.checklist) {
+  ul, ol {
+    margin-left: 1.5em;
+    // list-style-type: disc;
+    li > p { 
+      padding-left: 0.5em;
+    }
+    > li::marker {
+      content: "\f111";
+      font-family: "FontAwesome";
+      font-size: 0.7em;
+      color: $toc-title-bg-color;
+    }
+  }
+}
+
+.olist {
+  ol { 
+    margin-left: 2em;
+  }
+}
+
+i.conum[data-value] {
+  background-color: $toc-title-bg-color;
+}
 

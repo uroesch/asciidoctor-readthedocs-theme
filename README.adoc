@@ -8,12 +8,16 @@
 This is an early draft trying to bring a more modern look to the readthedocs
 theme included in the asciidoctor gem. 
 
-NOTE: At this point in time the only change compared to distributed version
-      is that the fonts and the table of contents and admonitions have been 
-      adjusted.
+NOTE: This style is still work in progress and not every element has been
+      finalized yet. Refer to the link:samples/article.html[Sample Article]
+      file to judge for yourself.
 
-.Screenshot of current version with new table of contents and admonitions.
-image::images/asciidoctor-readthedocs-screenshot.png[]
+.Screenshot of current admonition.
+image::images/asciidoctor-readthedocs-screenshot-admonition.png[]
+
+.Screenshot of current lists.
+image::images/asciidoctor-readthedocs-screenshot-lists.png[]
+
 
 == How to use
 
