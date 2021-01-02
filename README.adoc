@@ -77,3 +77,28 @@ to create the html file. This yields the file `samples/article.html`.
 ----
 rake test
 ----
+
+== Todo
+
+* [x] Table of Contents
+* [ ] Admonition
+** [x] Admonition colors and style.
+** [ ] Admonition title overrides.
+** [x] Simple one line admonitions.
+** [ ] Rich content admonitions.
+* [x] Lists
+** [x] Unordered Lists
+** [x] Ordered Lists
+*** [x] Alpha numeric
+*** [x] Roman numerals
+** [x] Checklists
+* [ ] Links
+** [x] Link symbol in section titles (anchor)
+* [ ] Quotes
+* [ ] Tables
+** [ ] Table border style
+** [ ] Table header style
+** [ ] Code inside tables
+* [ ] Cleanup
+** [ ] Remove duplication.
+* [ ] Footer

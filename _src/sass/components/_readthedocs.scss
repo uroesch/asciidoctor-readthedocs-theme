@@ -19,6 +19,7 @@ $footer-font-color: invert($body-font-color) !default;
 body {
   tab-size: 4;
   word-wrap: anywhere;
+  font-family: $body-font-family;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -535,7 +536,7 @@ b.button:after {
 .sect1 + .sect1 {
   border-top: $sect-divider-size $sect-divider-style $sect-divider-color;
 }
-
+/*
 // QUESTION why #content here?
 #content #{headers()} {
   > a.anchor {
@@ -572,6 +573,7 @@ b.button:after {
     }
   }
 }
+*/
 
 // AsciiDoc block styles
 
