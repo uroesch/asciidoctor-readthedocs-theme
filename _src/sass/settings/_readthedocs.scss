@@ -3,10 +3,10 @@
 // Body
 
 $body-font-color: #000;
-$body-font-family: Lato, Arial, 'Helvetica Neue', sans-serif;
+$body-font-family: 'Lato', 'Roboto', 'Arial', 'Helvetica Neue', sans-serif;
 $title-font-color: #111;
 $global-radius: 6px;
-$primary-color: #444;
+$primary-color: #2980b9;
 
 // Headers
 
@@ -14,13 +14,14 @@ $header-font-color: #465158;
 $header-font-family: "Roboto Slab", sans-serif;
 $header-top-margin: 1em;
 $subheader-font-color: #6c818f;
+$header-anchor-color: #3091d1;
 
 // TOC
 
 $toc-font-family: $body-font-family;
 $toc-title-font-family: $header-font-family;
 $toc-title-font-color: #ffffff;
-$toc-title-bg-color: #2980b9;
+$toc-title-bg-color: $primary-color;
 $toc-top-margin: 1em;
 $toc-section-font-color: #55a5d9;
 $toc-menu-font-color: #d9d9d9;
@@ -51,8 +52,8 @@ $pre-line-height: 1.2;
 
 // Links
 
-$anchor-text-decoration: underline;
-$anchor-font-color-hover: #111;
+$anchor-text-decoration: none;
+$anchor-font-color-hover: #3091d1;
 
 // Tables
 

@@ -1,5 +1,5 @@
 @import "settings/readthedocs";
-@import "components/asciidoc";
+@import "components/readthedocs";
 @import "components/awesome-icons";
 @import "fonts/roboto-slab";
 @import "fonts/lato";
@@ -327,3 +327,25 @@ i.conum[data-value] {
   background-color: $toc-title-bg-color;
 }
 
+#content #{headers()} {
+  &:hover > a.anchor,
+  > a.anchor:hover {
+    visibility: visible;
+  }
+  > a.link {
+    color: $header-font-color;
+    text-decoration: none;
+    &:hover {
+      color: darken($header-font-color, 5%);
+      &:after {
+        content: "\f0c1";
+        // transform: rotate(90deg);
+        font-family: 'FontAwesome';
+        font-size: 0.65em;
+        display: inline-block;
+        color: $anchor-font-color-hover;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}

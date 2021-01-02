@@ -146,8 +146,15 @@ Attach a block or paragraph to a list item using a list continuation (which you 
 
 === Checklist
 
+==== Non-interactive
 * [x] checked
 * [ ] not checked
+
+==== Interactive
+[%interactive]
+* [x] checked
+* [ ] not checked
+
 
 === Callout
 
