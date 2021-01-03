@@ -92,13 +92,20 @@ rake test
 *** [x] Alpha numeric
 *** [x] Roman numerals
 ** [x] Checklists
-* [ ] Links
+* [x] Links
 ** [x] Link symbol in section titles (anchor)
+** [x] Adjust link and text-decoration.
 * [ ] Quotes
 * [ ] Tables
 ** [ ] Table border style
 ** [ ] Table header style
-** [ ] Code inside tables
+** [x] Code inside tables
+** [x] Code inside tables
 * [ ] Cleanup
 ** [ ] Remove duplication.
 * [ ] Footer
+
+== Regressions
+* [ ] Tables
+** [ ] Verses inside tables (`v|` prefix) do not render correctly.
+** [ ] Stripes don't seem to work.

@@ -68,6 +68,10 @@ task :test do
      %(-a stylesheet=readthedocs.css ) +
      %(-o samples/article.html ) +
      %(test/article.adoc )
+  # create a standard stylesheet version for comparison.
+  sh %(#{asciidoctor} ) +
+     %(-o samples/standard-article.html ) +
+     %(test/article.adoc )
 end
 
 # -----------------------------------------------------------------------------
