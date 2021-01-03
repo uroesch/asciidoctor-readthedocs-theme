@@ -308,6 +308,126 @@ comment - content which is not included in the output document
 | psv {vbar} csv {vbar} dsv
 |===
 
+
+.Table with col and row spans and even stripes
+[cols=1;1;1;1,stripes=even,grid=all,options=header]
+|===
+|Column 1, row 1 
+|Column 2, row 1 
+|Column 3, row 1 
+|Column 4, row 1
+
+|Column 1, row 2
+2.1+|This is single cell that spans over 2 columns
+.2+| This is a single cell spanning over 2 columns.
+
+2.2+| This is a single spanning 2 rows and 2 columns.
+|Column 3, row 3
+// |Column 4, row 3
+
+|Column 3, row 4
+|Column 4, row 4
+|===
+
+.Nested tables
+[cols="1,2a"]
+|===
+| Col 1 | Col 2
+
+| Cell 1.1
+| Cell 1.2
+
+| Cell 2.1
+| Cell 2.2
+
+[cols="2,1"]
+!===
+! Col1 ! Col2
+
+! C11
+! C12
+
+!===
+
+|===
+
+.Tables with adjusted formating
+[cols=2;1;7,with=100%]
+|===
+| Style Name  
+| Value
+| Description
+
+| AsciiDoc
+| a
+a| 
+Supports block-level elements (paragraphs, delimited blocks, and block macros). 
+This style effectively creates a nested, standalone AsciiDoc document. 
+Implicit attributes such as doctitle from the parent document will be shadowed. 
+Custom attributes are inherited.
+
+Code sample `inside table cell`.
+
+NOTE: Adminition inside table cell
+
+.Code block inside table cell
+[source,shell]
+----
+git commit -m "Initial commit" <.>
+----
+<.> Callout inside table
+
+[stem]
+.Math inside table cell
+++++
+x = y^2
+++++
+
+.Quote inside table cell
+____
+quote - a quotation or excerpt; attribution with title of source are optional
+____
+
+
+| Emphasis
+| e
+e| Text is italicized
+
+| Header
+| h
+h| Header styles are applied to the column
+
+| Literal
+| l 
+l|Column content is treated as if it were inside a literal block
+
+| Monospaced
+| m  
+m| Text is rendered in monospaced font
+
+| None (default style)
+| d  
+d|
+Text is handled like a normal paragraph. 
+Supports all markup (i.e., **inline formatting**, _inline macros_) that 
+is permitted in a paragraph. E.g. sample code `code sample`.
+
+
+| Strong
+| s  
+s| Text is bolded
+
+| Verse
+| v
+v|Column content is treated as if it were inside a verse block
+This cell contains a verse
+that may one day expound on the
+wonders of tables in an
+epic sonnet.
+
+|===
+
+
 == Multimedia
 
 image::screenshot.png[block image,800,450]

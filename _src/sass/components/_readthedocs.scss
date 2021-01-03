@@ -1173,10 +1173,13 @@ tfoot tr th {
   }
 }
 
+/* 
+// remove to make same as outside table
 p.tableblock > code:only-child {
   background: none;
-  padding: 0;
+  padding: 0;   
 }
+*/
 
 p.tableblock {
   font-size: 1em;
