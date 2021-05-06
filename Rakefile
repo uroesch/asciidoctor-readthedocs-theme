@@ -58,10 +58,16 @@ end
 # -----------------------------------------------------------------------------
 # Tasks
 # -----------------------------------------------------------------------------
+desc "Build readthedocs stylesheets"
 task :default => 'css:default'
+
+desc "Clean css creation"
 task :clean => 'css:clean'
+
+desc "Install git hooks"
 task :hooks => 'git_hooks:default'
 
+desc "Create test and sample documents"
 task :test do
   sh %(#{asciidoctor} ) +
      %(-a stylesdir="#{BASE_DIR}" ) +
@@ -82,7 +88,6 @@ namespace :css do
   factory_dir = to_basename(FACTORY_DIR)
   sass_dir    = File.join(factory_dir, 'sass')
 
-  desc "Clean css creation"
   task :clean do 
     if File.exist?('.gitmodules') && File.size('.gitmodules') > 0
       sh %(git submodule deinit --force #{factory_dir})  
